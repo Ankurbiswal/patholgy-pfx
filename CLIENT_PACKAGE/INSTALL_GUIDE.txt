@@ -1,0 +1,86 @@
+=========================================================
+  PATHOLOGY LAB SOFTWARE — CLIENT INSTALLATION GUIDE
+=========================================================
+
+STEP 1: DOWNLOAD AND INSTALL THESE 2 SOFTWARE (First time only)
+-----------------------------------------------------------------
+
+A) SQL Server Express 2019 (Free)
+   Download: https://www.microsoft.com/en-us/sql/sql-server-downloads
+   Click "Download now" under Express edition
+   File size: ~260 MB
+   
+   HOW TO INSTALL:
+   - Run the downloaded file
+   - Choose "Basic" installation type
+   - When asked for SA Password → type:  software
+   - Click Install → wait for it to finish
+   - Restart PC after installation
+
+B) SAP Crystal Reports Runtime — 32-bit (Free)
+   Download: Search Google → "SAP Crystal Reports Runtime SP38 32 bit download"
+   OR go to: https://www.sap.com/cmp/syb/crm-xu15-int-crruntimes/index.html
+   File size: ~100 MB
+   
+   HOW TO INSTALL:
+   - Run the downloaded file
+   - Click Next → Next → Install
+   - Restart PC after installation
+
+
+STEP 2: SETUP THE DATABASE (First time only)
+---------------------------------------------
+1. Open folder: 2_Database
+2. Double-click: SETUP_DATABASE.bat
+   (Right-click → Run as Administrator if it asks)
+3. Wait for it to finish
+4. You should see: "SUCCESS! Database setup complete."
+
+
+STEP 3: RUN THE APP
+--------------------
+1. Open folder: 1_App
+2. Double-click: Pathology.exe
+3. Create a shortcut on Desktop for easy access:
+   Right-click Pathology.exe → Send to → Desktop (create shortcut)
+
+FIRST LOGIN:
+   Username: Admin
+   Password: Admin
+
+
+TROUBLESHOOTING
+---------------
+Problem: "Cannot connect to database"
+Fix: Open 3_Tools folder → Double-click Start_SQL_Server.bat
+
+Problem: Reports not printing / crashing on print button
+Fix: Crystal Reports Runtime not installed → install it (Step 1B)
+
+Problem: App does not open
+Fix: .NET Framework 3.5 not available
+     Go to: Control Panel → Programs → Turn Windows Features On/Off
+     → Check ".NET Framework 3.5" → OK
+
+
+NETWORK SETUP (Multiple PCs)
+------------------------------
+If you want to use on more than 1 PC:
+- Install SQL Server Express on ONE PC only (the main/server PC)
+- On all other PCs: copy only the 1_App folder
+- On each other PC: open Pathology.exe.config in Notepad
+  Change: Data Source=.\sqlexpress
+  To:     Data Source=SERVER_PC_IP\SQLEXPRESS
+  Example: Data Source=192.168.1.10\SQLEXPRESS
+- Save the file and run Pathology.exe
+
+
+BACKUP
+-------
+- App automatically backs up daily when you close it
+- Backup saved to: Documents\PathologyBackups\
+- Copy this folder to a pen drive weekly for extra safety!
+
+=========================================================
+  For support contact your software vendor
+=========================================================
