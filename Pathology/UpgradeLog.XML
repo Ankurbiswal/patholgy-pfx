@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Pathology">
+</Property><Property Name="Solution File" Value="D:\Pathology_hitech070112\Pathology\Pathology.sln">
+</Property><Property Name="Date" Value="Friday, April 27, 2012">
+</Property><Property Name="Time" Value="22:30 PM">
+</Property></Properties><Event ErrorLevel="0" Project="Pathology" Source="Pathology.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="Pathology" Source="Pathology.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Pathology.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Pathology.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="Pathology" Source="Pathology.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

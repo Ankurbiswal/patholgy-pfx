@@ -1,0 +1,80 @@
+  This is a pathology Software developed by Arun kumar Biswal,M.sc.(Math),Lecturer in math,then 22 yrs   working experience in kolkata as a senior software developer having wide functional knowledge in industrial     sectors BBSR  having about 500 installations All over odisha since 2005.
+  Also i provide all type of offline and online web based softwares in accounts,medicines etc.
+  Contact-:MOB:9937726338,7606967197
+
+
+ 
+  LOG IN :
+
+  Enter User Id=Admin & Password-Blank, Then Press Submit.
+
+  if your userid & Password does not match,it will show invalid password.
+
+  MAIN MENU:-
+  Company :-
+
+  Create Company-New
+  Open-
+
+
+  Master :-
+  Doctor Master- add names of reference doctors.
+  Test Master- add names of tests,unit,reference range & price of each test for billing.
+               You can add test Names which is not given in our forms pages.
+               You can add new tests to Haematology,Serology,Bio-Chemistry,Hormones etc.		 
+  
+  Item Master-for keeping stock of kits,chemicals.
+  Referal/Company Master- Names of referal/Company who do test of patients in your lab on commission basis.
+ 
+
+  Entry:-
+  Result Entry: This is the main screen for registering patient name,age,sex,ref.dr.,
+  Mobile no.,billing,result entry,reporting.
+
+  Put Name,date,Age,Sex,Ref.Dr,contact no, etc & press SAVE 
+  This will activate the all Test Pages.
+
+
+  hence as per the test requirement go to the respective drop down menu.
+  put the result & Save& Print.
+
+  Urine & Stool uses single page report each.
+  Haematology,serology,Biochem & Hormone are combined to  merge report print.
+  Other test menu have separate pages each.
+
+  Payment Entry:
+
+  Enter the payment given by patient by cash,Cheque
+
+  Clinical Reports :-
+  Patient bill register
+  Doctorwise payment Register
+  Cash Book
+  Patient O/s Ledger
+  Test counting
+
+  Set-Up:-
+
+  Normal range you can Change here.
+  Admin & userWise password can be given.
+  user cannot change any data or delete any data.
+
+  Stock:-
+  Enter purchase,Issue of items like kits,chemicals etc
+  get the stock details & summary report.
+
+
+  Note : we can show you the actual programs on live while you connect us in internet.
+
+  call us. Lab Software -:MOB:9937726338,7606967197
+
+
+  Thanking you,
+  Hope Software.
+  Bhubaneswar
+
+
+
+
+
+

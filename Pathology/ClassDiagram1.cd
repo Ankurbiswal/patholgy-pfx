@@ -1,0 +1,1501 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pathology.Class1" Collapsed="true">
+    <Position X="19.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Class1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmaccountmaster" Collapsed="true">
+    <Position X="21.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wCgA0IAISACCDQhgBCCEQCCkSiAIQACAAAGRAAEAjA=</HashCode>
+      <FileName>Frmaccountmaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmadminmaster" Collapsed="true">
+    <Position X="23.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAEAAIShQCBQAAAGAAQAiAgCAAAAAAAASQAAAMAQ=</HashCode>
+      <FileName>Frmadminmaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmbillentry" Collapsed="true">
+    <Position X="25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BgCgCEACASgAADYgAgCAgUACWAAgDBChQYiSABACBAA=</HashCode>
+      <FileName>Frmbillentry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmbillreg" Collapsed="true">
+    <Position X="0.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAQAACKAABQAJACIQQAKGAKAAAAAAAQCQAAAAIA=</HashCode>
+      <FileName>Frmbillreg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmbom" Collapsed="true">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BkggAAAAACAAABQAAkCCAQAKAAQgIAAAAAAWAACAAgA=</HashCode>
+      <FileName>Frmbom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmcompany" Collapsed="true">
+    <Position X="4" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>cAigA0AIASACABwAAAGAEQCKkSAEAAAACEgGBAAAAgA=</HashCode>
+      <FileName>Frmcompany.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmcompanysel" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACgAEAIASACABQAAACAAQACEAAAgAAACAAGAAAAAAA=</HashCode>
+      <FileName>Frmcompanysel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmculturemaster" Collapsed="true">
+    <Position X="7.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAMgIESCAARUAAgCAEQACsAggEAAAAQgCYAAAAgA=</HashCode>
+      <FileName>Frmculturemaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmdoctor" Collapsed="true">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggA0AIASACABQAAAGAEQiCESAEAAAACEAGBAAAAAA=</HashCode>
+      <FileName>Frmdoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmdoctorcomm" Collapsed="true">
+    <Position X="11" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAACIAABQAAACAAQACEAKIAAAAIUADQAECASA=</HashCode>
+      <FileName>Frmdoctorcomm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmmainmenu" Collapsed="true">
+    <Position X="12.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>S118nkfCAOBhAPWuhB28gWUj/I+AgGEAwqB3ECCFTUA=</HashCode>
+      <FileName>Frmmainmenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmnormalreferencesetup" Collapsed="true">
+    <Position X="14.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgggAAQIACAAARQBAkCAAQAKYAShIAAQAQgWQAAAAgA=</HashCode>
+      <FileName>Frmnormalreferencesetup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmopdbillentry" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgCgCEACASAAADYAAgCAoQgCWCgAAAAhQYiSABAABAA=</HashCode>
+      <FileName>Frmopdbillentry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmopdmaster" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/zE0DWCjADLYgjexIxWOlZoSHBvkAKH4J4SXcPCGfDY=</HashCode>
+      <FileName>Frmopdmaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmopdmasterbillentry" Collapsed="true">
+    <Position X="19.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hgCgCEACASAAADYAAgCAgQgCWCgAAAAhQYiSABAABAA=</HashCode>
+      <FileName>Frmopdmasterbillentry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmopdregister" Collapsed="true">
+    <Position X="21.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAgAACKAABQAAACIQQAGEAIAAAAAAAQCAAAAAAA=</HashCode>
+      <FileName>Frmopdregister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmopdregistration" Collapsed="true">
+    <Position X="23.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>4gAkCUACACKRgDUBIxGKhZoSWBDgAAH5JwSXcHAGJAI=</HashCode>
+      <FileName>Frmopdregistration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmoutsource" Collapsed="true">
+    <Position X="25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AhBgCcUAACIQADQAIQCCBQACEAIIAAAIAIQCcQACIDA=</HashCode>
+      <FileName>Frmoutsource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmpassword" Collapsed="true">
+    <Position X="0.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAgAAACAAABQCAECAgQACEIA4AAAAAAAAQgEIEAI=</HashCode>
+      <FileName>Frmpassword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmpathbill_opd" Collapsed="true">
+    <Position X="2.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAABQAAACAQQACEAKMAAAAAEACBAAEAEA=</HashCode>
+      <FileName>Frmpathbill_opd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmproductmaster" Collapsed="true">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>MAQgQgAABCABEBcQAAKAAUACOACBgBIAAkgCQgoAgSY=</HashCode>
+      <FileName>Frmproductmaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmprofilegr" Collapsed="true">
+    <Position X="5.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAAARQAAgCAAQACACgIAAAAAEgCAAAAAAA=</HashCode>
+      <FileName>Frmprofilegr.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmprofilemaster" Collapsed="true">
+    <Position X="7.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAgAAAIACAAARQCAgCAEQAKIAigAAIAAQgSQAAEAgA=</HashCode>
+      <FileName>Frmprofilemaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmpurchase" Collapsed="true">
+    <Position X="9.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>0CCoDkAABaAADDQgCAGiEQCiERCAAYAAAAAGRCAMACE=</HashCode>
+      <FileName>Frmpurchase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmreferal" Collapsed="true">
+    <Position X="11" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggEkQIASACABQAAAGAEQCCGSAEAAAACEAGBAAEAAA=</HashCode>
+      <FileName>Frmreferal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepbiochemn" Collapsed="true">
+    <Position X="12.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBiCUAAACIQADQAIQCCBQISEAKIAAAIAAzCcAAAIBI=</HashCode>
+      <FileName>Frmrepbiochemn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepbloodhtml" Collapsed="true">
+    <Position X="14.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAACAAADQAAACAgQACEAAIAEAAAAQCAACAAAA=</HashCode>
+      <FileName>Frmrepbloodhtml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepbloodn" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBkCUAAACAQADQAcQCCAQASEAKYAAAIAAyDdCAAIBI=</HashCode>
+      <FileName>Frmrepbloodn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepbodyfluid" Collapsed="true">
+    <Position X="18" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAACAIADQAAACABQAiEAIIAAAAAAkCAAAAAAA=</HashCode>
+      <FileName>Frmrepbodyfluid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepbsball" Collapsed="true">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBkCUAAACAQADQAIQCCAQASEAKIAAAIAASDcCAAIBI=</HashCode>
+      <FileName>Frmrepbsball.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepcashbook" Collapsed="true">
+    <Position X="21.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACAEABQEAACAAQACEAKAAAAAAEACQAACACA=</HashCode>
+      <FileName>Frmrepcashbook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepcodewise" Collapsed="true">
+    <Position X="23.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AihlCUAAACAQADQEISCqCQACEAKIAAAIAASDcAAQILI=</HashCode>
+      <FileName>Frmrepcodewise.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepculture" Collapsed="true">
+    <Position X="25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AihlCUAAACAQADQAIQCCAQACEAKIAAAJAASDcAEAILA=</HashCode>
+      <FileName>Frmrepculture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepculturedgv" Collapsed="true">
+    <Position X="0.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AihlCUAAACAQADQAIQCCAQACEEKIAAAIAASDcAEAILA=</HashCode>
+      <FileName>Frmrepculturedgv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepcytology" Collapsed="true">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAgAAACAAADQAAACABQAyEAIIAAAAAAkCAAAAAAA=</HashCode>
+      <FileName>Frmrepcytology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepdoctor" Collapsed="true">
+    <Position X="4" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAACICABQAAACAAQACEAKIAAAAAAACQAACACA=</HashCode>
+      <FileName>Frmrepdoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrephisto" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAACAAADQAAACABQAiEAIIAAAAAAkCAAAAAAA=</HashCode>
+      <FileName>Frmrephisto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrephormone" Collapsed="true">
+    <Position X="7.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AghkCUgAACBQADQAoQCCAQACEAKIAAAIAASDdAAAIBI=</HashCode>
+      <FileName>Frmrephormone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepissue" Collapsed="true">
+    <Position X="9.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAgAAAAACCAABQAAACAQQECEAYEAAAAAAACAAACAEA=</HashCode>
+      <FileName>Frmrepissue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepledger" Collapsed="true">
+    <Position X="11" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgCAAAACIAABQAAACAAQACEAKIAAAAIUACQEECASA=</HashCode>
+      <FileName>Frmrepledger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmreportall" Collapsed="true">
+    <Position X="12.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BghlCUwAACAQADQEoSCqAQASEAKIAAAIAASDcSABMRI=</HashCode>
+      <FileName>Frmreportall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmreppaid" Collapsed="true">
+    <Position X="14.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAAACAAADQAAACAgQAiEAIIAAAAAAACAAACACA=</HashCode>
+      <FileName>Frmreppaid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmreppathbill" Collapsed="true">
+    <Position X="16.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACCAABQAAACAQwAqEAKEAAAAAAACQAAAAEA=</HashCode>
+      <FileName>Frmreppathbill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepprofilereport" Collapsed="true">
+    <Position X="18" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgQAQAAKAAADUAAgCIAQACEAAAAAAAIAkCAAAAhAI=</HashCode>
+      <FileName>Frmrepprofilereport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepseminalfluid" Collapsed="true">
+    <Position X="19.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBgAAAAACAAADQAAICAAQASEAIIAAAAAQSCAAQAAAI=</HashCode>
+      <FileName>Frmrepseminalfluid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepserology" Collapsed="true">
+    <Position X="21.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AghkCUAAACAQADQEISCqDQASEAIIBgAIAASDMAEAIhI=</HashCode>
+      <FileName>Frmrepserology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepstock" Collapsed="true">
+    <Position X="23.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAACCAABUAAACAQQECEASAAAoAAAQCQAACASA=</HashCode>
+      <FileName>Frmrepstock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepstool" Collapsed="true">
+    <Position X="25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABwAAAAACAEADQAAACAAQASEEIIAAAAAAkCAAAAAAA=</HashCode>
+      <FileName>Frmrepstool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepsugar" Collapsed="true">
+    <Position X="0.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAAAACCAAADQAAACAAQACEAIIAAAAAAACAQACACA=</HashCode>
+      <FileName>Frmrepsugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmreptestsummary" Collapsed="true">
+    <Position X="2.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgBgCUEAACIQADQAIQCCBQICUAIIAAAIAAQCcwAKIDA=</HashCode>
+      <FileName>Frmreptestsummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmrepurine" Collapsed="true">
+    <Position X="4" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABwAAAAQCAAADQAAACAAQASEBIIAAAAIAkCAAEAAAA=</HashCode>
+      <FileName>Frmrepurine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmresultentry" Collapsed="true">
+    <Position X="5.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>////////////3///f///////P/7//////////////v8=</HashCode>
+      <FileName>Frmresultentry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmserch" Collapsed="true">
+    <Position X="7.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABgAgICACAAABYAAACgAQACEAyIAAAAECACRAAAACA=</HashCode>
+      <FileName>Frmserch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmtestmaster" Collapsed="true">
+    <Position X="9.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAMgIASCAAVUAAgCAEQACsAioEAAAAUgCYAAAAAA=</HashCode>
+      <FileName>Frmtestmaster.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmvoucherentry" Collapsed="true">
+    <Position X="11" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAgEAgIDyKACBUQAAqAIUACEACAg1oAACADQgCKgTY=</HashCode>
+      <FileName>Frmvoucherentry.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Frmword" Collapsed="true">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAIAAAECAAAAAQAACAIAACAEAgAAAAABAIAAAAAAA=</HashCode>
+      <FileName>Frmword.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Pathology_Ds" Collapsed="true">
+    <Position X="14.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAANAGABwAABJJABoAAQIDx4YgmQRgAQGgAYIECBBA=</HashCode>
+      <FileName>Pathology_Ds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Program" Collapsed="true">
+    <Position X="16.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Repbill_opd" Collapsed="true">
+    <Position X="18" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repbill_opd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbill_opd" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbill_opd.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbillreg" Collapsed="true">
+    <Position X="19.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repbillreg.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbillreg" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbillreg.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbillreg_detail" Collapsed="true">
+    <Position X="21.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repbillreg_detail.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbillreg_detail" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbillreg_detail.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbiochem" Collapsed="true">
+    <Position X="23.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repbiochem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbiochem" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbiochem.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbiochemn" Collapsed="true">
+    <Position X="25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAABBJAAAQAAAAAAAIAAEAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repbiochemn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbiochemn" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbiochemn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repblood" Collapsed="true">
+    <Position X="0.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAJAAAQQAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repblood.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepblood" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repblood.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbloodnew" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Repbloodnew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbloodnew" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbloodnew.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbloodnewall" Collapsed="true">
+    <Position X="4" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAwAQAQIAAAAIAAMAAAAAAAAADwABAAAABAA=</HashCode>
+      <FileName>Repbloodnewall.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbloodnewall" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbloodnewall.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbloodnewh" Collapsed="true">
+    <Position X="5.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAFdAgAQAQIAAAAIAAMAAAgEAAAADgABACAABAA=</HashCode>
+      <FileName>Repbloodnewh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbloodnewh" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbloodnewh.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbloodsumm" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIgCASALAECRIAAAAQEMBgAAICQgAACACqQBEEAARAQ=</HashCode>
+      <FileName>Repbloodsumm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbloodsumm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbloodsumm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbloodwidal_montux" Collapsed="true">
+    <Position X="9.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgIAAAJAAAQQAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repbloodwidal_montux.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbloodwidal_montux" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbloodwidal_montux.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repbodyfluid" Collapsed="true">
+    <Position X="11" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repbodyfluid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepbodyfluid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repbodyfluid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repcash" Collapsed="true">
+    <Position X="12.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAggAAAJAAAQAAAAAAAIAAAAAAAIAACACCABAAQABAA=</HashCode>
+      <FileName>Repcash.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepcash" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repcash.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repculture" Collapsed="true">
+    <Position X="14.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAIAAAAIAAEAAAAAAAAADAABAAIABAA=</HashCode>
+      <FileName>Repculture.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepculture" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repculture.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repculturedgv" Collapsed="true">
+    <Position X="16.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAIAAAAIAAEAAAAAAAAEDAABAAIABAA=</HashCode>
+      <FileName>Repculturedgv.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepculturedgv" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repculturedgv.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repcytology" Collapsed="true">
+    <Position X="18" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repcytology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepcytology" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repcytology.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repcytologyn" Collapsed="true">
+    <Position X="19.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIABEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repcytologyn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepcytologyn" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repcytologyn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repdiabetic" Collapsed="true">
+    <Position X="21.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAABBJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repdiabetic.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepdiabetic" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repdiabetic.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repdoctor" Collapsed="true">
+    <Position X="23.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repdoctor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepdoctor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repdoctor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Rephisto1" Collapsed="true">
+    <Position X="25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIABEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Rephisto1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRephisto1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rephisto1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Rephormone" Collapsed="true">
+    <Position X="0.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Rephormone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRephormone" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rephormone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Rephormonen" Collapsed="true">
+    <Position X="2.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Rephormonen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRephormonen" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rephormonen.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.repissue" Collapsed="true">
+    <Position X="4" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAACJAAARAAAAgAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>repissue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Cachedrepissue" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>repissue.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repled2" Collapsed="true">
+    <Position X="5.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAYAAAAAAAIAAAAAAAAAACADCABAAQABAA=</HashCode>
+      <FileName>Repled2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepled2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repled2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repled4" Collapsed="true">
+    <Position X="7.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAYAAAAAAAIAAAAAAAAAACADCABAAQABAA=</HashCode>
+      <FileName>Repled4.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepled4" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repled4.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repnewall_h" Collapsed="true">
+    <Position X="9.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAFdAwAQAQIAAAAIAAMAAAgEAAAADwABACAABAA=</HashCode>
+      <FileName>Repnewall_h.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepnewall_h" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repnewall_h.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repnil" Collapsed="true">
+    <Position X="11" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAABBJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repnil.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepnil" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repnil.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repopdregister" Collapsed="true">
+    <Position X="12.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAABQAAAAAAACAABAAAABCA=</HashCode>
+      <FileName>Repopdregister.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepopdregister" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repopdregister.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.reportnewalln" Collapsed="true">
+    <Position X="14.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAwAQAQIAAAAIAAMAAAAAAAAADwABAAAABAA=</HashCode>
+      <FileName>reportnewalln.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Cachedreportnewalln" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>reportnewalln.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reportnewwidal" Collapsed="true">
+    <Position X="16.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAQgF9QwAQASIAgABo4D8AIAQAAAAADwAhgAAABAA=</HashCode>
+      <FileName>Reportnewwidal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReportnewwidal" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reportnewwidal.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reportnote" Collapsed="true">
+    <Position X="18" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAABABAA=</HashCode>
+      <FileName>Reportnote.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReportnote" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reportnote.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reportprofilewonor" Collapsed="true">
+    <Position X="19.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABNAgAQAAIAAAAIAAEAAAAAAAAADgABAABABAA=</HashCode>
+      <FileName>Reportprofilewonor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReportprofilewonor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reportprofilewonor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repos" Collapsed="true">
+    <Position X="21.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAACACCQBAAAABAA=</HashCode>
+      <FileName>Repos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepos" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repos.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppaid" Collapsed="true">
+    <Position X="23.25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Reppaid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppaid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppaid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppaid1" Collapsed="true">
+    <Position X="25" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAgAQAAAAAAAIAAAAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Reppaid1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppaid1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppaid1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppathbill" Collapsed="true">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Reppathbill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppathbill" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppathbill.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppregnancy" Collapsed="true">
+    <Position X="2.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAJAAAQAAIAAAAIAAEAAAgEAAAACAABACAABAA=</HashCode>
+      <FileName>Reppregnancy.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppregnancy" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppregnancy.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppregnancyh" Collapsed="true">
+    <Position X="4" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Reppregnancyh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppregnancyh" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppregnancyh.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.reppricelist" Collapsed="true">
+    <Position X="5.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABCA=</HashCode>
+      <FileName>reppricelist.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Cachedreppricelist" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>reppricelist.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repprofilereport" Collapsed="true">
+    <Position X="7.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAANAAAQAAIAAAAIAAEAAAAAAAAACAABAABABAA=</HashCode>
+      <FileName>Repprofilereport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepprofilereport" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repprofilereport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reppss" Collapsed="true">
+    <Position X="9.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Reppss.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReppss" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reppss.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reprenlip" Collapsed="true">
+    <Position X="11" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAABBJAAAQAAAAAAAIAAEAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Reprenlip.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReprenlip" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reprenlip.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reprutine" Collapsed="true">
+    <Position X="12.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Reprutine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReprutine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reprutine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repseminalfluid" Collapsed="true">
+    <Position X="14.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repseminalfluid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepseminalfluid" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repseminalfluid.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repseminalfluidds" Collapsed="true">
+    <Position X="16.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repseminalfluidds.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepseminalfluidds" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repseminalfluidds.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repseminalfluiddsh" Collapsed="true">
+    <Position X="18" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAAAJAAAQAAIAAAAIAAEAAAgEAAAACAABACAABAA=</HashCode>
+      <FileName>Repseminalfluiddsh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepseminalfluiddsh" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repseminalfluiddsh.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repseminalfluidn" Collapsed="true">
+    <Position X="19.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repseminalfluidn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepseminalfluidn" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repseminalfluidn.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repseminalfluidn1" Collapsed="true">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repseminalfluidn1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepseminalfluidn1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repseminalfluidn1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repserology" Collapsed="true">
+    <Position X="23.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAQIAAAAIAAEAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repserology.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepserology" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repserology.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repserologyanglunation" Collapsed="true">
+    <Position X="25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAQAQAQIAAAAIAAEAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repserologyanglunation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepserologyanglunation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repserologyanglunation.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repserologytube" Collapsed="true">
+    <Position X="0.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAApAAAQASIAgABo4B8AAAQAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repserologytube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepserologytube" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repserologytube.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repserologytubeanglunitation2" Collapsed="true">
+    <Position X="2.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAQAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repserologytubeanglunitation2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepserologytubeanglunitation2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repserologytubeanglunitation2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repsertube" Collapsed="true">
+    <Position X="4" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAApAAAQASIAgABo4B8AAAQAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repsertube.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepsertube" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repsertube.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.repslidenew" Collapsed="true">
+    <Position X="5.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAApAAAQISIAgABo4B8AAAQAAAAACAABAAAABAA=</HashCode>
+      <FileName>repslidenew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Cachedrepslidenew" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>repslidenew.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repslidenew11" Collapsed="true">
+    <Position X="7.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAApAAAQISIAgABo4B8AAAQAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repslidenew11.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepslidenew11" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repslidenew11.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstled1" Collapsed="true">
+    <Position X="9.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAARAAAAgAAIAAAAAAAAAACADCABAAQABAA=</HashCode>
+      <FileName>Repstled1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstled1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstled1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstocksumm" Collapsed="true">
+    <Position X="11" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAARAAAAgAAIAAAAAAAAAACADCABAAQABAA=</HashCode>
+      <FileName>Repstocksumm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstocksumm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstocksumm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstoled2" Collapsed="true">
+    <Position X="12.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repstoled2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstoled2" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstoled2.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstool" Collapsed="true">
+    <Position X="14.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repstool.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstool" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstool.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstooln" Collapsed="true">
+    <Position X="16.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repstooln.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstooln" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstooln.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstoolnew" Collapsed="true">
+    <Position X="18" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Repstoolnew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstoolnew" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstoolnew.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstoolnew1" Collapsed="true">
+    <Position X="19.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Repstoolnew1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstoolnew1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstoolnew1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstoolnew1h" Collapsed="true">
+    <Position X="21.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAABJAgAQAAIAAAAIAAEAAAgEAAAADgABACAABAA=</HashCode>
+      <FileName>Repstoolnew1h.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstoolnew1h" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstoolnew1h.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstsumm" Collapsed="true">
+    <Position X="23.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAACADCABAAQABAA=</HashCode>
+      <FileName>Repstsumm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstsumm" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstsumm.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repstsummary" Collapsed="true">
+    <Position X="25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAAAAAAIAAAAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repstsummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepstsummary" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repstsummary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repsugar" Collapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAAAQAAAAAAAIAAAAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Repsugar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepsugar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repsugar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reptestsummary" Collapsed="true">
+    <Position X="2.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAmAQSApgACRAEAQEFAIAoAAiGYIAACADCUFAAgABEA=</HashCode>
+      <FileName>Reptestsummary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReptestsummary" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reptestsummary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Reptubeanglunation1" Collapsed="true">
+    <Position X="4" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAABJAQAQAQIAAAAIAAEAAAAAAAAADAABAAAABAA=</HashCode>
+      <FileName>Reptubeanglunation1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedReptubeanglunation1" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Reptubeanglunation1.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repurine" Collapsed="true">
+    <Position X="5.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAJAAAQAAIAAAAIAAEAAAAAAAAACAABAAAABAA=</HashCode>
+      <FileName>Repurine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepurine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repurine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repurinenew" Collapsed="true">
+    <Position X="7.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAFdAgAQAQIAAAAIAAMAAAAAAAAADgABAAAABAA=</HashCode>
+      <FileName>Repurinenew.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepurinenew" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repurinenew.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Repurinenewh" Collapsed="true">
+    <Position X="9.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgQAABJAgAQAAIAAAAIAAEAAAgEAAAADgABACAABAA=</HashCode>
+      <FileName>Repurinenewh.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.CachedRepurinenewh" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAFAEAAAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Repurinenewh.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pathology.Properties.Resources" Collapsed="true">
+    <Position X="11" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAIAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pathology.Properties.Settings" Collapsed="true">
+    <Position X="14.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoundButton" Collapsed="true">
+    <Position X="12.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RoundButton.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

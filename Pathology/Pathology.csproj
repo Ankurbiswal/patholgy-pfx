@@ -1,0 +1,1712 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{559CB9C2-F628-4804-B101-0FBE88283CEE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pathology</RootNamespace>
+    <AssemblyName>Pathology</AssemblyName>
+    <ManifestCertificateThumbprint>32D5457DC98D5EE7846606C74291A3A01A3181C0</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Pathology_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>Pathology_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+    <TargetZone>LocalIntranet</TargetZone>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <PublishUrl>D:\publishpathology\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>31</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BarcodeLib.Barcode.WinForms, Version=5.0.0.50227, Culture=neutral, PublicKeyToken=ef1bae04ecfd0461, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\BarcodeLib.Barcode.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Data.AdoDotNetInterop, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.VSDesigner, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <!-- Microsoft.Office.Interop.Word removed - code using it is commented out -->
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Frmdatareceived.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdatareceived.Designer.cs">
+      <DependentUpon>Frmdatareceived.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmportsetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmportsetup.Designer.cs">
+      <DependentUpon>Frmportsetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmaccountmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmaccountmaster.Designer.cs">
+      <DependentUpon>Frmaccountmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmadminmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmadminmaster.Designer.cs">
+      <DependentUpon>Frmadminmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmbackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmbackup.Designer.cs">
+      <DependentUpon>Frmbackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmbillentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmbillentry.Designer.cs">
+      <DependentUpon>Frmbillentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmbillreg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmbillreg.Designer.cs">
+      <DependentUpon>Frmbillreg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmbom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmbom.Designer.cs">
+      <DependentUpon>Frmbom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcolonycount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcolonycount.Designer.cs">
+      <DependentUpon>Frmcolonycount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcompany.Designer.cs">
+      <DependentUpon>Frmcompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmcompanysel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmcompanysel.Designer.cs">
+      <DependentUpon>Frmcompanysel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmculturemaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmculturemaster.Designer.cs">
+      <DependentUpon>Frmculturemaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmculturetype.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmculturetype.Designer.cs">
+      <DependentUpon>Frmculturetype.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmculture_organism.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmculture_organism.Designer.cs">
+      <DependentUpon>Frmculture_organism.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdoctor.Designer.cs">
+      <DependentUpon>Frmdoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmdoctorcomm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmdoctorcomm.Designer.cs">
+      <DependentUpon>Frmdoctorcomm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmmainmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmmainmenu.Designer.cs">
+      <DependentUpon>Frmmainmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmnormalreferencesetup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmnormalreferencesetup.Designer.cs">
+      <DependentUpon>Frmnormalreferencesetup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmopdbillentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmopdbillentry.Designer.cs">
+      <DependentUpon>Frmopdbillentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmopdmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmopdmaster.Designer.cs">
+      <DependentUpon>Frmopdmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmopdmasterbillentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmopdmasterbillentry.Designer.cs">
+      <DependentUpon>Frmopdmasterbillentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmopdregister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmopdregister.Designer.cs">
+      <DependentUpon>Frmopdregister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmopdregistration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmopdregistration.Designer.cs">
+      <DependentUpon>Frmopdregistration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmoutsource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmoutsource.Designer.cs">
+      <DependentUpon>Frmoutsource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpending.cs" />
+    <Compile Include="Frmpending.Designer.cs"><DependentUpon>Frmpending.cs</DependentUpon></Compile>
+    <Compile Include="Frmpassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpassword.Designer.cs">
+      <DependentUpon>Frmpassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpathbill_opd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpathbill_opd.Designer.cs">
+      <DependentUpon>Frmpathbill_opd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmproductmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmproductmaster.Designer.cs">
+      <DependentUpon>Frmproductmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmprofilegr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmprofilegr.Designer.cs">
+      <DependentUpon>Frmprofilegr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmprofilemaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmprofilemaster.Designer.cs">
+      <DependentUpon>Frmprofilemaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpurchase.Designer.cs">
+      <DependentUpon>Frmpurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreferal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreferal.Designer.cs">
+      <DependentUpon>Frmreferal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepbiochemn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepbiochemn.Designer.cs">
+      <DependentUpon>Frmrepbiochemn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepbloodhtml.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepbloodhtml.Designer.cs">
+      <DependentUpon>Frmrepbloodhtml.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepbloodn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepbloodn.Designer.cs">
+      <DependentUpon>Frmrepbloodn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepbodyfluid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepbodyfluid.Designer.cs">
+      <DependentUpon>Frmrepbodyfluid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepbsball.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepbsball.Designer.cs">
+      <DependentUpon>Frmrepbsball.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepcashbook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepcashbook.Designer.cs">
+      <DependentUpon>Frmrepcashbook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepcodewise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepcodewise.Designer.cs">
+      <DependentUpon>Frmrepcodewise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepculture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepculture.Designer.cs">
+      <DependentUpon>Frmrepculture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepculturedgv.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepculturedgv.Designer.cs">
+      <DependentUpon>Frmrepculturedgv.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepcytology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepcytology.Designer.cs">
+      <DependentUpon>Frmrepcytology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepdoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepdoctor.Designer.cs">
+      <DependentUpon>Frmrepdoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrephisto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrephisto.Designer.cs">
+      <DependentUpon>Frmrephisto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrephormone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrephormone.Designer.cs">
+      <DependentUpon>Frmrephormone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepissue.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepissue.Designer.cs">
+      <DependentUpon>Frmrepissue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepledger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepledger.Designer.cs">
+      <DependentUpon>Frmrepledger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepopdprescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepopdprescription.Designer.cs">
+      <DependentUpon>Frmrepopdprescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreportall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreportall.Designer.cs">
+      <DependentUpon>Frmreportall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreppaid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreppaid.Designer.cs">
+      <DependentUpon>Frmreppaid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreppathbill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreppathbill.Designer.cs">
+      <DependentUpon>Frmreppathbill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepprofilereport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepprofilereport.Designer.cs">
+      <DependentUpon>Frmrepprofilereport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepseminalfluid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepseminalfluid.Designer.cs">
+      <DependentUpon>Frmrepseminalfluid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepserology.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepserology.Designer.cs">
+      <DependentUpon>Frmrepserology.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepstock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepstock.Designer.cs">
+      <DependentUpon>Frmrepstock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepstool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepstool.Designer.cs">
+      <DependentUpon>Frmrepstool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepsugar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepsugar.Designer.cs">
+      <DependentUpon>Frmrepsugar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmreptestsummary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmreptestsummary.Designer.cs">
+      <DependentUpon>Frmreptestsummary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepurine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepurine.Designer.cs">
+      <DependentUpon>Frmrepurine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmrepxray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmrepxray.Designer.cs">
+      <DependentUpon>Frmrepxray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmresultentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmresultentry.Designer.cs">
+      <DependentUpon>Frmresultentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmserch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmserch.Designer.cs">
+      <DependentUpon>Frmserch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmtestmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmtestmaster.Designer.cs">
+      <DependentUpon>Frmtestmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmvoucherentry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmvoucherentry.Designer.cs">
+      <DependentUpon>Frmvoucherentry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmword.Designer.cs">
+      <DependentUpon>Frmword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IFrmrepbloodn.cs" />
+    <Compile Include="Pathology_Ds.cs">
+      <DependentUpon>Pathology_Ds.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Pathology_Ds.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Pathology_Ds.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Frmaccountmaster.resx">
+      <DependentUpon>Frmaccountmaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmadminmaster.resx">
+      <DependentUpon>Frmadminmaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmbackup.resx">
+      <DependentUpon>Frmbackup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmbillentry.resx">
+      <DependentUpon>Frmbillentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmbillreg.resx">
+      <DependentUpon>Frmbillreg.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmbom.resx">
+      <DependentUpon>Frmbom.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcolonycount.resx">
+      <DependentUpon>Frmcolonycount.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcompany.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmcompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmcompanysel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmcompanysel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmculturemaster.resx">
+      <DependentUpon>Frmculturemaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmculturetype.resx">
+      <DependentUpon>Frmculturetype.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmculture_organism.resx">
+      <DependentUpon>Frmculture_organism.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdatareceived.resx">
+      <DependentUpon>Frmdatareceived.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdoctor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmdoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmdoctorcomm.resx">
+      <DependentUpon>Frmdoctorcomm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmmainmenu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmmainmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmnormalreferencesetup.resx">
+      <DependentUpon>Frmnormalreferencesetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmopdbillentry.resx">
+      <DependentUpon>Frmopdbillentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmopdmaster.resx">
+      <DependentUpon>Frmopdmaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmopdmasterbillentry.resx">
+      <DependentUpon>Frmopdmasterbillentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmopdregister.resx">
+      <DependentUpon>Frmopdregister.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmopdregistration.resx">
+      <DependentUpon>Frmopdregistration.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmoutsource.resx">
+      <DependentUpon>Frmoutsource.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmpassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpathbill_opd.resx">
+      <DependentUpon>Frmpathbill_opd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmportsetup.resx">
+      <DependentUpon>Frmportsetup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmproductmaster.resx">
+      <DependentUpon>Frmproductmaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmprofilegr.resx">
+      <DependentUpon>Frmprofilegr.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmprofilemaster.resx">
+      <DependentUpon>Frmprofilemaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpurchase.resx">
+      <DependentUpon>Frmpurchase.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreferal.resx">
+      <DependentUpon>Frmreferal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepbiochemn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepbiochemn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepbloodhtml.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepbloodhtml.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepbloodn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepbloodn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepbodyfluid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepbodyfluid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepbsball.resx">
+      <DependentUpon>Frmrepbsball.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepcashbook.resx">
+      <DependentUpon>Frmrepcashbook.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepcodewise.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepcodewise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepculture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepculture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepculturedgv.resx">
+      <DependentUpon>Frmrepculturedgv.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepcytology.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepcytology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepdoctor.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepdoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrephisto.resx">
+      <DependentUpon>Frmrephisto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrephormone.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrephormone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepissue.resx">
+      <DependentUpon>Frmrepissue.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepledger.resx">
+      <DependentUpon>Frmrepledger.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepopdprescription.resx">
+      <DependentUpon>Frmrepopdprescription.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreportall.resx">
+      <DependentUpon>Frmreportall.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreppaid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmreppaid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreppathbill.resx">
+      <DependentUpon>Frmreppathbill.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepprofilereport.resx">
+      <DependentUpon>Frmrepprofilereport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepseminalfluid.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepseminalfluid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepserology.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepserology.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepstock.resx">
+      <DependentUpon>Frmrepstock.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepstool.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepstool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepsugar.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepsugar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmreptestsummary.resx">
+      <DependentUpon>Frmreptestsummary.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepurine.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmrepurine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmrepxray.resx">
+      <DependentUpon>Frmrepxray.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmresultentry.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Frmresultentry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmserch.resx">
+      <DependentUpon>Frmserch.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmtestmaster.resx">
+      <DependentUpon>Frmtestmaster.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmvoucherentry.resx">
+      <DependentUpon>Frmvoucherentry.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmword.resx">
+      <DependentUpon>Frmword.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbillreg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbillreg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbillreg_detail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbillreg_detail.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbill_opd.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbill_opd.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbiochemall.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbiochemall.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbiochemn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbiochemn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repblood.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repblood.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbloodnew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbloodnew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbloodnewall.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbloodnewall.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbloodnewh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbloodnewh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbloodsumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbloodsumm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbloodwidal_montux.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbloodwidal_montux.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbodyfluid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbodyfluid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repbodyfluid_ds.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repbodyfluid_ds.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repcash.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repcash.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repculture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repculture.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repculturedgv.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repculturedgv.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repculturedgv1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repculturedgv1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repculturenogrowth.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repculturenogrowth.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repculturenogrowth1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repculturenogrowth1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repcytology.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repcytology.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repcytology11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repcytology11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repcytologyn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repcytologyn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repdiabetic.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repdiabetic.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repdoctor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repdoctor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rephisto1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rephisto1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rephisto11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rephisto11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rephormone.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rephormone.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rephormonen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Rephormonen.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repissue.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repissue.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repled2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repled2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repled4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repled4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repnewall_h.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repnewall_h.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repnil.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repnil.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repopdregister.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repopdregister.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repopdregistern.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repopdregistern.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repopdsaiseva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repopdsaiseva.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reportnewalln.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reportnewalln.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportnewallparam.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportnewallparam.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportnewwidal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportnewwidal.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportnote.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportnote.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportprofilewonor.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportprofilewonor.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportwidalheader.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reportwidalheader.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repos.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppaid1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppaid1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppathbill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppathbill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppending.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppending.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppregnancy.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppregnancy.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppregnancyh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppregnancyh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reppricelist.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reppricelist.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repprofilereport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repprofilereport.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repprofilereportg.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repprofilereportg.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reppss.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reppss.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprenlip.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reprenlip.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reprutine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reprutine.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repseminalfluid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repseminalfluid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repseminalfluidds.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repseminalfluidds.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repseminalfluiddsh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repseminalfluiddsh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repseminalfluidn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repseminalfluidn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repseminalfluidn1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repseminalfluidn1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repserology.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repserology.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repserologyanglunation.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repserologyanglunation.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repserologytube.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repserologytube.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repserologytubeanglunitation2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repserologytubeanglunitation2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repsertube.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repsertube.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="repslidenew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>repslidenew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repslidenew11.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repslidenew11.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstled1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstled1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstocksumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstocksumm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstoled2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstoled2.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstooln.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstooln.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstoolnew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstoolnew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstoolnew1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstoolnew1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstoolnew1h.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstoolnew1h.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstsumm.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstsumm.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repstsummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repstsummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repsugar.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repsugar.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reptestsummary.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reptestsummary.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reptube.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>reptube.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reptubeanglunation1.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Reptubeanglunation1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repurine.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repurine.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repurinenew.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repurinenew.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repurinenewh.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repurinenewh.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repvoucherprint.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repvoucherprint.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Repxray.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Repxray.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Repbillreg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbillreg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbillreg_detail.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbillreg_detail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbill_opd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbill_opd.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbiochemall.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbiochemall.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbiochemn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbiochemn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repblood.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repblood.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Repbloodnew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbloodnew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbloodnewall.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbloodnewall.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbloodnewh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbloodnewh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbloodsumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbloodsumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbloodwidal_montux.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbloodwidal_montux.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Repbodyfluid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbodyfluid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repbodyfluid_ds.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repbodyfluid_ds.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repcash.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repcash.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repculture.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repculture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repculturedgv.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repculturedgv.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repculturedgv1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repculturedgv1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repculturenogrowth.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repculturenogrowth.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repculturenogrowth1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repculturenogrowth1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repcytology.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repcytology.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repcytology11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repcytology11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repcytologyn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repcytologyn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repdiabetic.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repdiabetic.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repdoctor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repdoctor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rephisto1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rephisto1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rephisto11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rephisto11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rephormone.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rephormone.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rephormonen.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Rephormonen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="repissue.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repissue.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repled2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repled2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repled4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repled4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repnewall_h.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repnewall_h.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repnil.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repnil.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repopdregister.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repopdregister.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repopdregistern.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repopdregistern.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repopdsaiseva.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repopdsaiseva.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reportnewalln.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reportnewalln.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportnewallparam.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportnewallparam.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportnewwidal.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportnewwidal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportnote.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportnote.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportprofilewonor.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportprofilewonor.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportwidalheader.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reportwidalheader.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repos.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppaid1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppaid1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppathbill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppathbill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppending.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppending.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppregnancy.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppregnancy.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppregnancyh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppregnancyh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reppricelist.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reppricelist.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repprofilereport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repprofilereport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repprofilereportg.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repprofilereportg.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reppss.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reppss.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reprenlip.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reprenlip.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reprutine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reprutine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repseminalfluid.cs">
+      <SubType>Component</SubType>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repseminalfluid.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Repseminalfluidds.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repseminalfluidds.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repseminalfluiddsh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repseminalfluiddsh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repseminalfluidn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repseminalfluidn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repseminalfluidn1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repseminalfluidn1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repserology.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repserology.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repserologyanglunation.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repserologyanglunation.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repserologytube.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repserologytube.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repserologytubeanglunitation2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repserologytubeanglunitation2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repsertube.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repsertube.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="repslidenew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>repslidenew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repslidenew11.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repslidenew11.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstled1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstled1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstocksumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstocksumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstoled2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstoled2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstooln.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstooln.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstoolnew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstoolnew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstoolnew1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstoolnew1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstoolnew1h.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstoolnew1h.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstsumm.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstsumm.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repstsummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repstsummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repsugar.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repsugar.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reptestsummary.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reptestsummary.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="reptube.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>reptube.rpt</DependentUpon>
+    </Compile>
+    <Compile Include="Reptubeanglunation1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reptubeanglunation1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repurine.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repurine.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repurinenew.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repurinenew.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repurinenewh.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repurinenewh.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repvoucherprint.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repvoucherprint.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Repxray.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Repxray.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="file handelling.doc" />
+    <None Include="Pathology_Ds.xsc">
+      <DependentUpon>Pathology_Ds.xsd</DependentUpon>
+    </None>
+    <None Include="Pathology_Ds.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Pathology_Ds.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Pathology_Ds.xss">
+      <DependentUpon>Pathology_Ds.xsd</DependentUpon>
+    </None>
+    <None Include="Pathology_TemporaryKey.pfx" />
+    <BaseApplicationManifest Include="Properties\app.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.10.5">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports Basic for Visual Studio 2008 %28x86, x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports for .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.ReportViewer.8.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft Visual Studio 2008 Report Viewer</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Visual.C++.9.0.x86">
+      <Visible>False</Visible>
+      <ProductName>Visual C++ Runtime Libraries %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.VSTORuntime.3.0">
+      <Visible>False</Visible>
+      <ProductName>Visual Studio Tools for the Office system 3.0 Runtime</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\back_btn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\help.txt" />
+    <Content Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- COM references removed - using pre-built Interop DLLs in bin\Debug instead -->
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

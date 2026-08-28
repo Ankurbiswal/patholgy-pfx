@@ -1,0 +1,30 @@
+# Windows build output
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Debug symbols (large, not needed in git)
+*.pdb
+
+# ClickOnce publish
+app.publish/
+*.application
+*.manifest
+
+# Visual Studio cache
+.idea/
+*.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files created by app
+PathologyBackups/
+
+# Local config overrides (client-specific connection strings go here)
+# Pathology.exe.config is INCLUDED in git (has default settings)

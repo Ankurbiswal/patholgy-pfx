@@ -1,0 +1,65 @@
+﻿This is a pathology Software developed by A k Biswal,BBSR since 2005
+Lab Software -:
+
+
+ 
+LOG IN :
+
+Enter User Id & Password, Then Press Submit.
+
+if your userid & Password does not match,it will show invalid password.
+
+MAIN MENU:-
+Company :-
+
+Create Company-New
+Open-
+
+
+Master :-
+Doctor Master- add names of reference doctors.
+Test Master- add names of tests,unit,reference range & price of each test for billing.
+Item Master-for keeping stock of kits,chemicals
+Referal Master- Names of referal who do test of patients in your lab on commission basis.
+ 
+
+Entry:-
+Result Entry: This is the main screen for registering patient name,age,sex,ref.dr., billing,result entry,reporting.
+
+Put Name,date,Age,Sex,Ref.Dr,contact no, etc & press SAVE 
+This will activate the Test menu bar.
+
+
+hence as per the test requirement go to the respective drop down menu.
+put the result & Save& Print.
+
+Urine & Stool uses single page report each.
+haematology,serology,Biochem & Hormone are combined to  merge report print.
+Other test menu have separate pages each.
+
+Payment Entry:
+
+Enter the payment given by patient by cash,Cheque
+
+Clinical Reports :-
+Patient bill register
+Doctorwise payment Register
+Cash Book
+Patient O/s Ledger
+Test counting
+
+Set-Up:-
+
+Normal range you can update here.
+Admin Panel setup.
+
+Stock:-
+Enter purchase,Issue of items like kits,chemicals etc
+get the stock details & summary report.
+
+
+
+
+
+
+
