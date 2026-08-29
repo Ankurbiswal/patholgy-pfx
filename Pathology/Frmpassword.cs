@@ -27,7 +27,18 @@ namespace Pathology
         {
             Class1 objclass = new Class1();
             con = new SqlConnection(objclass.arun_con());
-            con.Open();
+            try { con.Open(); }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    "Cannot connect to database!\n\n" +
+                    "FIX: Run 3_Tools\\FIX_SQL_CONNECTION.bat as Administrator\n" +
+                    "Then restart the app.\n\n" +
+                    "Error: " + ex.Message,
+                    "Database Connection Failed",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                Application.Exit(); return;
+            }
             txtuserid.Text = "Admin";
             txtuserid.Focus();
         }
