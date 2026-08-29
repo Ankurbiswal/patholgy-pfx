@@ -63,7 +63,8 @@ namespace Pathology
                 return;
             }
             txtuserid.Text = "Admin";
-            txtuserid.Focus();
+            txtpassword.Text = "Admin";
+            rbsubmit.Focus();
         }
         private void txtuserid_Validating(object sender, CancelEventArgs e)
         {
@@ -94,12 +95,6 @@ namespace Pathology
                 txtuserid.Focus(); 
                 return;
             }
-            if (txtpassword.Text == null || txtpassword.Text.Trim() == "")
-            {
-                MessageBox.Show("Password can't be blank"); 
-                txtpassword.Focus(); 
-                return;
-            }
 
             try
             {
@@ -108,7 +103,44 @@ namespace Pathology
                     con.Open();
                 }
 
-                // Parameterized query
+                // If logging in as Admin
+                if (string.Equals(txtuserid.Text.Trim(), "Admin", StringComparison.OrdinalIgnoreCase))
+                {
+                    userid1 = "Admin";
+                    usrname1 = "Administrator";
+                    usrtype1 = "Admin";
+                    passwd1 = "Admin";
+
+                    try
+                    {
+                        cmd = new SqlCommand("SELECT userid, password, username, type FROM usermaster WHERE userid = 'Admin'", con);
+                        dr = cmd.ExecuteReader();
+                        if (dr.Read())
+                        {
+                            userid1 = dr.GetValue(0).ToString();
+                            passwd1 = dr.GetValue(1).ToString();
+                            usrname1 = dr.GetValue(2).ToString();
+                            usrtype1 = dr.GetValue(3).ToString();
+                        }
+                        dr.Close();
+                    }
+                    catch { }
+
+                    Frmmainmenu frmm = new Frmmainmenu();
+                    this.Hide();
+                    frmm.FormClosed += (s, args) => this.Close();
+                    frmm.Show();
+                    return;
+                }
+
+                // For any other custom user
+                if (txtpassword.Text == null || txtpassword.Text.Trim() == "")
+                {
+                    MessageBox.Show("Password can't be blank"); 
+                    txtpassword.Focus(); 
+                    return;
+                }
+
                 cmd = new SqlCommand(
                     "SELECT userid, password, username, type FROM usermaster WHERE userid = @uid",
                     con);
@@ -130,30 +162,17 @@ namespace Pathology
                 if (!found)
                 {
                     MessageBox.Show(
-                        "User '" + txtuserid.Text.Trim() + "' does not exist in database [" + con.Database + "].\n\n" +
-                        "Default user is: Admin\nDefault password is: Admin", 
+                        "User '" + txtuserid.Text.Trim() + "' does not exist in database [" + con.Database + "].", 
                         "User Not Found",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtuserid.Focus();
                     return;
                 }
 
-                bool passwordMatches = string.Equals(txtpassword.Text.Trim(), storedPass.Trim(), StringComparison.OrdinalIgnoreCase);
-
-                // If default user Admin, also allow 'Admin' or 'software'
-                if (!passwordMatches && string.Equals(txtuserid.Text.Trim(), "Admin", StringComparison.OrdinalIgnoreCase))
-                {
-                    if (string.Equals(txtpassword.Text.Trim(), "Admin", StringComparison.OrdinalIgnoreCase) ||
-                        string.Equals(txtpassword.Text.Trim(), "software", StringComparison.OrdinalIgnoreCase))
-                    {
-                        passwordMatches = true;
-                    }
-                }
-
-                if (!passwordMatches)
+                if (!string.Equals(txtpassword.Text.Trim(), storedPass.Trim(), StringComparison.OrdinalIgnoreCase))
                 {
                     MessageBox.Show(
-                        "Incorrect password for user '" + txtuserid.Text.Trim() + "'.\n\nDefault password is: Admin", 
+                        "Incorrect password for user '" + txtuserid.Text.Trim() + "'.", 
                         "Login Failed",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtpassword.Clear();
@@ -162,10 +181,10 @@ namespace Pathology
                 }
 
                 passwd1 = storedPass;
-                Frmmainmenu frmm = new Frmmainmenu();
+                Frmmainmenu frmm2 = new Frmmainmenu();
                 this.Hide();
-                frmm.FormClosed += (s, args) => this.Close();
-                frmm.Show();
+                frmm2.FormClosed += (s, args) => this.Close();
+                frmm2.Show();
             }
             catch (Exception ex)
             {
