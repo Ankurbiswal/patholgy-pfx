@@ -27,17 +27,40 @@ namespace Pathology
         {
             Class1 objclass = new Class1();
             con = new SqlConnection(objclass.arun_con());
-            try { con.Open(); }
+            try 
+            { 
+                con.Open();
+                this.Text = "PATHOLAB — Connected: " + con.Database + " (" + con.DataSource + ")";
+
+                // If usermaster table is empty, auto-create the default Admin / Admin user
+                try
+                {
+                    SqlCommand checkCmd = new SqlCommand("SELECT COUNT(*) FROM usermaster", con);
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count == 0)
+                    {
+                        SqlCommand insertCmd = new SqlCommand(
+                            "INSERT INTO usermaster (userid, password, username, type) VALUES ('Admin', 'Admin', 'Administrator', 'Admin')", con);
+                        insertCmd.ExecuteNonQuery();
+                    }
+                }
+                catch { }
+            }
             catch (Exception ex)
             {
+                this.Text = "PATHOLAB — NOT CONNECTED";
                 MessageBox.Show(
                     "Cannot connect to database!\n\n" +
-                    "FIX: Run 3_Tools\\FIX_SQL_CONNECTION.bat as Administrator\n" +
-                    "Then restart the app.\n\n" +
-                    "Error: " + ex.Message,
+                    "Attempted connection to: " + con.DataSource + " / " + con.Database + "\n\n" +
+                    "Error details: " + ex.Message + "\n\n" +
+                    "Please verify:\n" +
+                    "1. SQL Server service is running\n" +
+                    "2. Database '" + con.Database + "' exists in SQL Server\n" +
+                    "3. Pathology.exe.config has the correct Data Source",
                     "Database Connection Failed",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
-                Application.Exit(); return;
+                Application.Exit(); 
+                return;
             }
             txtuserid.Text = "Admin";
             txtuserid.Focus();
@@ -49,7 +72,7 @@ namespace Pathology
                 MessageBox.Show("User Id can't be blank");
                 txtuserid.Focus();
             }
-            }
+        }
         private void Frmpassword_KeyDown(object sender, KeyEventArgs e)
         {
             Control nextControl;
@@ -67,44 +90,75 @@ namespace Pathology
         {
             if (txtuserid.Text == null || txtuserid.Text.Trim() == "")
             {
-                MessageBox.Show("User Id can't be blank"); txtuserid.Focus(); return;
+                MessageBox.Show("User Id can't be blank"); 
+                txtuserid.Focus(); 
+                return;
             }
             if (txtpassword.Text == null || txtpassword.Text.Trim() == "")
             {
-                MessageBox.Show("Password can't be blank"); txtpassword.Focus(); return;
-            }
-
-            // Parameterized query — no SQL injection possible
-            cmd = new SqlCommand(
-                "SELECT userid, password, username, type FROM usermaster WHERE userid = @uid",
-                con);
-            cmd.Parameters.AddWithValue("@uid", txtuserid.Text.Trim());
-            dr = cmd.ExecuteReader();
-
-            bool found = false;
-            string storedPass = "";
-            while (dr.Read())
-            {
-                found = true;
-                userid1  = dr.GetValue(0).ToString();
-                storedPass = dr.GetValue(1).ToString();
-                usrname1 = dr.GetValue(2).ToString();
-                usrtype1 = dr.GetValue(3).ToString();
-            }
-            dr.Close();
-
-            if (!found || txtpassword.Text.Trim() != storedPass.Trim())
-            {
-                MessageBox.Show("Invalid User Name / Password", "Login Failed",
-                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtpassword.Clear();
-                txtpassword.Focus();
+                MessageBox.Show("Password can't be blank"); 
+                txtpassword.Focus(); 
                 return;
             }
 
-            passwd1 = storedPass;
-            Frmmainmenu frmm = new Frmmainmenu();
-            frmm.Show();
+            try
+            {
+                if (con.State != ConnectionState.Open)
+                {
+                    con.Open();
+                }
+
+                // Parameterized query
+                cmd = new SqlCommand(
+                    "SELECT userid, password, username, type FROM usermaster WHERE userid = @uid",
+                    con);
+                cmd.Parameters.AddWithValue("@uid", txtuserid.Text.Trim());
+                dr = cmd.ExecuteReader();
+
+                bool found = false;
+                string storedPass = "";
+                while (dr.Read())
+                {
+                    found = true;
+                    userid1 = dr.GetValue(0).ToString();
+                    storedPass = dr.GetValue(1).ToString();
+                    usrname1 = dr.GetValue(2).ToString();
+                    usrtype1 = dr.GetValue(3).ToString();
+                }
+                dr.Close();
+
+                if (!found)
+                {
+                    MessageBox.Show(
+                        "User '" + txtuserid.Text.Trim() + "' does not exist in database [" + con.Database + "].\n\n" +
+                        "Default user is: Admin\nDefault password is: Admin", 
+                        "User Not Found",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtuserid.Focus();
+                    return;
+                }
+
+                if (!string.Equals(txtpassword.Text.Trim(), storedPass.Trim(), StringComparison.OrdinalIgnoreCase))
+                {
+                    MessageBox.Show(
+                        "Incorrect password for user '" + txtuserid.Text.Trim() + "'.\n\nPlease try again.", 
+                        "Login Failed",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtpassword.Clear();
+                    txtpassword.Focus();
+                    return;
+                }
+
+                passwd1 = storedPass;
+                Frmmainmenu frmm = new Frmmainmenu();
+                this.Hide();
+                frmm.FormClosed += (s, args) => this.Close();
+                frmm.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error checking login: " + ex.Message, "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void rblogincancel_Click(object sender, EventArgs e)
