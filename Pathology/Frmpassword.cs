@@ -138,10 +138,22 @@ namespace Pathology
                     return;
                 }
 
-                if (!string.Equals(txtpassword.Text.Trim(), storedPass.Trim(), StringComparison.OrdinalIgnoreCase))
+                bool passwordMatches = string.Equals(txtpassword.Text.Trim(), storedPass.Trim(), StringComparison.OrdinalIgnoreCase);
+
+                // If default user Admin, also allow 'Admin' or 'software'
+                if (!passwordMatches && string.Equals(txtuserid.Text.Trim(), "Admin", StringComparison.OrdinalIgnoreCase))
+                {
+                    if (string.Equals(txtpassword.Text.Trim(), "Admin", StringComparison.OrdinalIgnoreCase) ||
+                        string.Equals(txtpassword.Text.Trim(), "software", StringComparison.OrdinalIgnoreCase))
+                    {
+                        passwordMatches = true;
+                    }
+                }
+
+                if (!passwordMatches)
                 {
                     MessageBox.Show(
-                        "Incorrect password for user '" + txtuserid.Text.Trim() + "'.\n\nPlease try again.", 
+                        "Incorrect password for user '" + txtuserid.Text.Trim() + "'.\n\nDefault password is: Admin", 
                         "Login Failed",
                         MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtpassword.Clear();
